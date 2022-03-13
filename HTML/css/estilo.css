@@ -1,0 +1,30 @@
+#principal {
+
+    background-color: #f30707;
+    color: rgb(133, 49, 202);
+width: 920px;
+
+}
+
+#esquerdo{
+
+    background-color: burlywood;
+    margin: 10 px auto;
+    width: 600px;
+    border: 1px solid red;
+    padding: 10px;
+float: left;
+
+}
+
+
+#direito{
+
+float: right;
+background-color: burlywood;
+margin: 10 px auto;
+width: 260px;    
+border: 1px solid blue;
+padding: 10px;
+
+}

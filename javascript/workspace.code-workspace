@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		}
+	],
+	"settings": {
+		"phpserver.phpPath": "D:\\XAMPP\\php\\php.exe",
+		"liveServer.settings.multiRootWorkspaceName": "1_estudo",
+		"phpserver.phpConfigPath": ""
+	}
+}
