@@ -7,22 +7,31 @@
     <title>Document</title>
 </head>
 <body>
-
     <script>
-
-var n1 = parseInt(prompt('insira número 1'))
-
-var n2 = parseInt(prompt('insira número 2'))
+var n1 = window.prompt('altura')
+var n2 = window.prompt('largura')
 
 
+function area (n1,n2) {
+
+    
+    
+    return (n1 * n2)
+
+
+}
+
+
+
+document.write('o terreno possui ' + area(n1,n2) + ' metros quadrados')
+    
 
 
 
 
+console.log(n1,n2,area)
 
-document.write('seu numero é :'+ (n1 + n2))
 
     </script>
-    
 </body>
 </html>
