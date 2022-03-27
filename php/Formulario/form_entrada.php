@@ -3,6 +3,12 @@
 <head>
 
 <meta charset="utf-8"
+
+
+
+
+
+
 </head>
 
 <body>
@@ -17,7 +23,7 @@
 
 <label for="usuario"><p>Qual seu nome:</p></label>
 
-<input type= "text" name = "usuario"><br><br>
+<input type= "text" class="form-control field" name = "usuario"><br><br>
 
 <label for="generos"><p>Qual seu genero:</p></label>
 
