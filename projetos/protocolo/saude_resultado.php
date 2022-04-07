@@ -9,31 +9,60 @@
 $preccp = $_GET['preccp'];
 $email = $_GET['email'];
 
-$sql = 'SELECT * from teste where `nome `= ' . $preccp;
+$sql = 'SELECT * from teste where `id`='. $preccp;
 
-$conn = new mysqli("localhost","root","","bdteste");
+$conn = new mysqli("sql468.main-hosting.eu","u339965567_protocolo","Master2022","u339965567_protocolo");
+
+$result = $conn->query($sql);
+
 
 
 If ($conn->connect_errno){
 
     echo 'Falha na conecxão com';
     exit();
-} else {
-
-    echo '<h3 style="color:blue;">Conexão aberta com sucesso no banco</h3> <p>';
-        //var_dump($conn);
-}
-
-
-
-echo 'seu prec-cp é: '. $preccp .' e seu email é: '. $email;
+} 
 
 ?>
 
+<hr>
 
+
+<!--tabela-->
 <br><br><br>
-<a href="index.php"><button type="button">INÍCIO</button></a><br><br><br>
-<a href="saude_pesquisa.php"><button type="button">PESQUISAR</button></a>
+<div class = "m-5"> 
+
+        <table class="table">
+        <thead>
+            <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+           <?php
+                while($user_data=mysqli_fetch_assoc($result)){
+
+                    echo "<tr>";
+                    echo "<td>".$user_data['id']."</td>";
+                    echo "<td>".$user_data['nome']."</td>";
+                    echo "<td>".$user_data['idade']."</td>";
+                    echo "<td>".$user_data['extra']."</td>";
+
+
+                }
+           ?>
+        </tbody>
+
+        </table>
+</div>
+
+
+<br>
+
+<p style="text-align:center; "><a href="saude_pesquisa.php"><img src="imagem/btn_voltar.jpg " style="width:80px"></a><p>
 
 </body>
 </html>

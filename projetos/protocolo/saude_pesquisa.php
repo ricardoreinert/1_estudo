@@ -65,7 +65,7 @@
 
     <h3>Menu Temporário</h3>
 
-<a href="index.php"><button type="button">INÍCIO</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
+
 <a href="saude_resultado.php"><button type="button">RESULTADO</button></a>
 
 <div> 
