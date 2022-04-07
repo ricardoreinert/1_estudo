@@ -1,46 +1,73 @@
 <?php include("recursos/nav.php")?>
     
 <?php include("recursos/cabecalho.php") ?>
+
+<br><br>
+
+
+<div style="margin:40px;"> 
     
 <h1>PESQUISAR AGENDAMENTOS</h1>
-
+<br><br>
+<div style="background:gray;">
+<h2>Pesquisar Histórico Completo</h2>
+</div>
 <form class="row gy-2 gx-3 align-items-center">
       <div class="col-auto">
-        <label class="visually-hidden" for="autoSizingInput">Name</label>
-        <input type="text" class="form-control" id="autoSizingInput" placeholder="Jane Doe" class="bg-danger"> 
+        <!--<label class="visually-hidden" for="autoSizingInput">Name</label> -->
+        <label for="preccp">Prec-CP</label>
+        <input type="text" class="form-control" id="autoSizingInput" placeholder="somente números" class="bg-danger"> 
       </div>
+
       <div class="col-auto">
-        <label class="visually-hidden" for="autoSizingInputGroup">Username</label>
+        <!--<label class="visually-hidden" for="autoSizingInputGroup">Username</label>-->
+        <label for="email">E-mail</label>
         <div class="input-group">
           <div class="input-group-text">@</div>
-          <input type="text" class="form-control" id="autoSizingInputGroup" placeholder="Username">
+          <input type="text" class="form-control" id="email" placeholder="e-mail do usuário">
         </div>
+
       </div>
+
+            
       <div class="col-auto">
-        <label class="visually-hidden" for="autoSizingSelect">Preference</label>
-        <select class="form-select" id="autoSizingSelect">
-          <option selected>Choose...</option>
-          <option value="1">One</option>
-          <option value="2">Two</option>
-          <option value="3">Three</option>
-        </select>
+          <label for="pesquisar"></label>
+        <button type="submit" class="btn btn-success">PESQUISAR</button>
       </div>
+    
+      <br><br><br>
+<!-- Pesquisar por Código  -->
+
+<br><br>
+
+<div style="background:gray;">
+<h2>Pesquisar apenas agendamento com Código</h2>
+
+</div>
+<br><br><br><br>
+<form class="row gy-2 gx-3 align-items-center">
       <div class="col-auto">
-        <div class="form-check">
-          <input class="form-check-input" type="checkbox" id="autoSizingCheck">
-          <label class="form-check-label" for="autoSizingCheck">
-            Lembre me
-          </label>
-        </div>
+        <!--<label class="visually-hidden" for="autoSizingInput">Name</label> -->
+        <label for="codigo">Código</label>
+        <input type="text" class="form-control" id="autoSizingInput" placeholder="insira as 5 letras" class="bg-danger"> 
       </div>
+
+                  
       <div class="col-auto">
-        <button type="submit" class="btn btn-primary">Submit</button>
+          <label for="pesquisar"></label>
+        <button type="submit" class="btn btn-success">PESQUISAR</button>
       </div>
+
+
     </form>
 
+    <br><br><br>
 
-<br><br><br>
-<a href="index.php"><button type="button">INÍCIO</button></a><br><br><br>
+    <h3>Menu Temporário</h3>
+
+<a href="index.php"><button type="button">INÍCIO</button></a>&nbsp;&nbsp;&nbsp;&nbsp;
 <a href="saude_resultado.php"><button type="button">RESULTADO</button></a>
+
+<div> 
 </body>
 </html>
