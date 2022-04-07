@@ -12,19 +12,19 @@
 <div style="background:gray;">
 <h2>Pesquisar Histórico Completo</h2>
 </div>
-<form class="row gy-2 gx-3 align-items-center">
+<form class="row gy-2 gx-3 align-items-center" method="GET" action="saude_resultado.php">
       <div class="col-auto">
-        <!--<label class="visually-hidden" for="autoSizingInput">Name</label> -->
+        <!--PREC-CP -->
         <label for="preccp">Prec-CP</label>
-        <input type="text" class="form-control" id="autoSizingInput" placeholder="somente números" class="bg-danger"> 
+        <input type="text" class="form-control" id="preccp" name= "preccp" placeholder="somente números" class="bg-danger"> 
       </div>
 
       <div class="col-auto">
-        <!--<label class="visually-hidden" for="autoSizingInputGroup">Username</label>-->
+        <!--<label class="E-mail-->
         <label for="email">E-mail</label>
         <div class="input-group">
           <div class="input-group-text">@</div>
-          <input type="text" class="form-control" id="email" placeholder="e-mail do usuário">
+          <input type="text" class="form-control" id="email" name="email" placeholder="e-mail do usuário">
         </div>
 
       </div>
