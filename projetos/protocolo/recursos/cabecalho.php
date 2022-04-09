@@ -7,8 +7,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="bootstrap5/css/bootstrap.min.css"  >
-        <!-- Importar CSS-->
+        <!-- Bootstrap Javascript -->
+    <script src="/bootstrap/bootstrap5/js/bootstrap.bundle.min.js"></script>
+        <!-- Importar CSS customizdo -->
     <link rel="stylesheet" href="recursos/custom.css">
+
 
 <title>Sistema de Protocolos</title>
 

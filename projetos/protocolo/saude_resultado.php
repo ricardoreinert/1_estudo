@@ -1,6 +1,13 @@
+<!-- área de importaçõa -->
 <?php include("recursos/nav.php")?>
     
 <?php include("recursos/cabecalho.php") ?>
+<!-- fim da área de importação -->
+
+
+ <script>
+document.title = "Resultado da Pesquisa";
+ </script>
     
 <h1>RESULTADO DA PESQUISA</h1>
 
@@ -32,7 +39,7 @@ If ($conn->connect_errno){
 <br><br><br>
 <div class = "m-5"> 
 
-        <table class="table">
+        <table class="table container-sm">
         <thead>
             <tr>
             <th scope="col">#</th>

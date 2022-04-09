@@ -2,14 +2,18 @@
     
 <?php include("recursos/cabecalho.php") ?>
 
+        <script>
+        document.title = "Pesquisar Agendamento";
+        </script>
+
 <br><br>
 
 
-<div style="margin:40px;"> 
+<div style="margin:40px;" class="container-sm" > 
     
 <h1>PESQUISAR AGENDAMENTOS</h1>
 <br><br>
-<div style="background:gray;">
+<div style="background:gray;" >
 <h2>Pesquisar Histórico Completo</h2>
 </div>
 <form class="row gy-2 gx-3 align-items-center" method="GET" action="saude_resultado.php">

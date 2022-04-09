@@ -1,8 +1,14 @@
-
+<!-- Início da Área de importação -->
 <?php include("recursos/nav.php")?>
     
-    <?php include("recursos/cabecalho.php") ?>
-    
+<?php include("recursos/cabecalho.php") ?>
+<!-- Fim da Área de Importação -->
+
+
+    <script>
+    document.title = "Sistema de Protocolos";
+    </script>
+
     
     
         <br><br><br>
