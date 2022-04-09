@@ -11,7 +11,7 @@ $email = $_GET['email'];
 
 $sql = 'SELECT * from teste where `id`='. $preccp;
 
-$conn = new mysqli("sql468.main-hosting.eu","u339965567_protocolo","Master2022","u339965567_protocolo");
+$conn = new mysqli("localhost","ricardoreinert","C@mp1n@s","bdteste");
 
 $result = $conn->query($sql);
 
@@ -49,7 +49,7 @@ If ($conn->connect_errno){
                     echo "<td>".$user_data['id']."</td>";
                     echo "<td>".$user_data['nome']."</td>";
                     echo "<td>".$user_data['idade']."</td>";
-                    echo "<td>".$user_data['extra']."</td>";
+                   
 
 
                 }
