@@ -11,7 +11,6 @@ $result = $conexao->query($sql);
 //print_r($result);
 
 
-
 ?>
 
 <!DOCTYPE html>
@@ -45,8 +44,8 @@ $result = $conexao->query($sql);
                     echo "<td>".$user_data['nome']."</td>";
                     echo "<td>".$user_data['idade']."</td>";
                     echo "<td>".$user_data['cidade']."</td>";
-
-
+                    echo "</tr>";
+                    
                 }
            ?>
         </tbody>
@@ -63,3 +62,4 @@ $result = $conexao->query($sql);
 
 
 </html>
+

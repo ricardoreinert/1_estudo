@@ -14,6 +14,7 @@ $conexao = new mysqli($dbHost,$dbUsername,$dbPassword,$dbName);
 
     echo "Sucesso na Conexão";
 }
+*/
 
 
-?>*/
+?>
