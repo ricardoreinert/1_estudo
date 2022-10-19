@@ -1,4 +1,14 @@
-.col {
+.col-3, .col-4 {
 
-    background-color: blue;
+    border:solid 1px;
+    padding: 5px;
+    
+    
+    
+}
+
+
+
+#verde {
+    background-color: green;
 }
