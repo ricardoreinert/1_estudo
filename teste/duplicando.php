@@ -29,7 +29,7 @@ $result = $conexão->query($sql);
 ?>
 
 
-<divclass = "m-5">
+<div class = "m-5">
 
 <table class="table">
 <thead>
