@@ -16,11 +16,14 @@ $_SESSION["numero3"] = $n3;
 ?>
 
 <!DOCTYPE html>
-<html lang="PT-bR"
+<html lang="PT-bR">
 
 <head>
 
-    <meta charset="utf-8"  </head> <body>
+    <meta charset="utf-8"  
+</head> 
+
+<body>
     <h1>pagina 1 da Seção</h1>
 
 
