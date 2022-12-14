@@ -100,7 +100,40 @@ if (isset($_POST['submit'])){
 
 }
 
+
+
+include "sicavep/conexao.php";
+
+
+
+if (isset($_GET['submit'])) {
+$cpf = $_GET['cpf'];
+
+$sql = 'SELECT * FROM tb_pessoa WHERE cpf = '. "'". $cpf ."'".'LIMIT 1';
+
+$result = mysqli_query($conexao, $sql);
+
+
+
+if (mysqli_num_rows($result) != 0) {
+
+
+
+echo "<script language='javascript'> window.location = '/index.php/confirmar-excluir-pessoa?cpf=<?php $cpf; ?>'; </script>";
+
+
+
+} else {
+
+echo "<script language='javascript'> window.alert('Não foi encontrado registro para o CPF " . $cpf . "!'); </script>";
+
+};
+
+};
+
+
 ?>
+
 
 </body>
 </html>

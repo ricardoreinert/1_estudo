@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<!-- link estilo personalizado-->>
+
+<link rel="stylesheet" href="estilo.css">
+
+    <title>Padrao</title>
+
+</head>
+
+<body>
+    
+<div class="container">
+    <form method="post" id="userForm"  action="https://sicavep.com.br/index.php/cadastros/cadastrar-pessoas">
+        
+        <div id="rsform_error_3" style="display: none;"><p>PA 1 - ENTRADA</p></div>
+        <!-- Do not remove this ID, it is used to identify the page so that the pagination script can work correctly -->
+        <fieldset class="formContainer" id="rsform_3_page_0">
+            
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="row mb-3">
+                        <label class="col-sm-3 col-form-label formControlLabel" data-bs-toggle="tooltip" title="" for="cpf" data-bs-original-title="">CPF</label>
+                        <div class="formControls col-sm-9">
+                            <input type="text" value="" size="20" maxlength="14" name="form[cpf]" id="cpf" onkeydown="javascript: fMasc( this, mCPF );" class="rsform-input-box form-control" aria-required="true">
+                            <div><span class="formValidation"><span id="component25" class="formNoError">Entrada Inválida</span></span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="row mb-3 rsform-block rsform-block-nome">
+                        <label class="col-sm-3 col-form-label formControlLabel" data-bs-toggle="tooltip" title="" for="nome" data-bs-original-title="">Nome</label>
+                        <div class="formControls col-sm-9">
+                            <input type="text" value="" size="20" name="form[nome]" id="nome" onkeyup="this.value=this.value.toUpperCase();" class="rsform-input-box form-control" aria-required="true">
+                            <div><span class="formValidation"><span id="component27" class="formNoError">Entrada Inválida</span></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </fieldset>
+    </form>
+    
+</div>
+
+
+
+</body>
+</html>
