@@ -13,20 +13,39 @@
 <?php
 
 
-$conexao = new mysqli('localhost','ricardoreinert','C@mp1n@s','bdteste');
-
-$sql = "SELECT nome FROM tab_aluno where id = 1";
-
-$result = mysqli_query($conexao,$sql);
+echo '<br>';
 
 
-$row= mysqli_fetch_assoc($result);
+$filename = '\flor.jpg';
 
-echo $rows['nome'];
+$fileDir  = realpath(__DIR__.'../../HTML/imagem/');
+
+// $fileDir = __DIR__ .'/';
+
+$file = $fileDir . $filename;
+
+
+
+echo $file; // ver qual caminho
+
+echo '<br><br><br>';
+
+
+//-----------------------------------------
+
+if (file_exists($file))
+{
+     $b64image = base64_encode(file_get_contents($file));
+     echo "<img src = 'data:image/png;base64,$b64image'>";
+}
 
 
 
 ?>
+
+
+
+
 
 
 
