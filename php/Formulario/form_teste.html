@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+<!-- link estilo personalizado-->
+
+<link rel="stylesheet" href="estilo.css">
+
+    <title>Padrao</title>
+
+</head>
+
+
+<body>  
+    
+    
+
+    <div class="container">
+    
+   <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?></form>">
+    <h4><span style="color: #4c78b5;"><strong>&nbsp;VEÍCULO</strong></span></h4>
+    <!-- linha 0 -->
+
+    <div class="row justify-content-center gx-5">
+        <div class="col-4 mb-3">
+            <div class="form-floating">
+                <input type="text" class="form-control" id="placa"  name="placa">
+                <label for="placa">Placa</label>
+              </div>
+        </div>
+        <div class="col-4 mb-3" >
+            <div >
+                <button type="button" class="btn btn-secondary">PESQUISAR</button>
+            </div>
+        </div>
+        
+    <!-- linha 1 -->
+
+    <div class="row gx-5">
+        <div class="col-md mb-3">
+          <div class="form-floating">
+            <select class="form-select" id="tipo_veiculo" name="tipo_veiculo">
+                <option value="Carro">Carro</option>
+                <option value="Moto">Moto</option>
+                <option value="Caminhão">Caminhão</option>
+              </select>
+              <label for="tipo_veiculo">Tipo de Veículo</label>
+          </div>
+        </div>
+        <div class="col-md mb-3" >
+          <div class="form-floating">
+            <input type="text" class="form-control" id="modelo"  name="modelo">
+            <label for="modelo">Marca / Modelo</label>
+          </div>
+        </div>
+        <div class="col-md mb-3" mb-3>
+            <div class="form-floating">
+              <select class="form-select" id="cor" name="cor">
+                <option selected>Selecione abaixo .....</option>
+                <option value="1">Branco</option>
+                <option value="2">Preto</option>
+                <option value="3">Cinza</option>
+              </select>
+              <label for="cor">Cor</label>
+            </div>
+          </div>
+      </div>
+
+<!-- linha 2 -->
+<h4><span style="color: #4c78b5;"><strong>&nbsp;CONDUTOR</strong></span></h4>
+
+
+<div class="row gx-5">
+    <div class="col-md mb-3">
+      <div class="form-floating">
+        <input type="text" class="form-control" id="cpf"  name="cpf">
+        <label for="cpf">CPF</label>
+      </div>
+    </div>
+    <div class="col-md mb-3">
+        <div class="form-floating">
+          <input type="text" class="form-control" id="condutor"  name="condutor">
+          <label for="condutor">Condutor</label>
+        </div>
+      </div>
+      <div class="col-md mb-3">
+        <div class="form-floating">
+          <input type="text" class="form-control" id="telefone"  name="telefone">
+          <label for="telefone">Telefone</label>
+        </div>
+      </div>
+
+      
+  </div>
+
+<!--ultima linha-->
+
+<div class="row justify-content-center">
+    <div class="col-4">
+        <button type="button" class="btn btn-primary">REGISTRAR ENTRADA</button>
+      </div>
+</div>
+
+   </form>    
+   
+</div>
+
+</body>
+</html>
