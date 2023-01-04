@@ -8,7 +8,7 @@
 <input type="submit" name="submit" value="ENVIAR">
 
 
-
+<img src="/uploads/'.'gleice.jpg' ?>"/>
 
 </form>
 
