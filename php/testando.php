@@ -34,12 +34,19 @@ if ($conn -> connect_errno) {
 
 // teste de Select no Banco
 
-$sql = "INSERT INTO tab_teste VALUES (NULL, 'Moana',23,'Teresina')";
+$sql = "SELECT * FROM tab_aluno";
 
 $result = mysqli_query($conn, $sql);
 
 //echo mysqli_num_rows($result);
 
+// Associative array
+while ($row = mysqli_fetch_assoc($result)) {
+  echo $row['nome'];
+  echo '--';
+  echo $row['idade'];
+  echo '<br>';
+  }
 
 
 ?>
