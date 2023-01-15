@@ -1,24 +1,16 @@
 
 <html>
 <head>
-<script>
-    function popup() {
-        var x;
-        var r = confirm("Tem certeza que deseja excluir?");
-        if (r == true) {
-         x = "Apertou OK!";
-     } else {
-         x = "Apertou Cancela!";
-     }
-        
-     document.getElementById("demo").innerHTML = x;
-}
-</script>
-</head>
-<body>
+
 <?php
+
+echo "<td><button type='button' name = 'x' class='btn btn-primary btn-sm'><i class='far fa-edit'>&nbsp;Editar</i></button></td>";
+
+
+if(iset(butt))
+
 ?>
-<button onclick="popup()">Click Aqui</button>
-<p id="demo"></p>
+
+
 </body>
 </html>
