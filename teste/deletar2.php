@@ -1,5 +1,6 @@
-<?php
 
+
+<?php
 
 
 $filename = '\amazon.jpg';
@@ -7,9 +8,9 @@ $filename = '\amazon.jpg';
 $root = HTTP_REFERER;
 
 
-$file = $root.  $filename;
+$file = $root .  $filename;
 
-	
+
 //foreach ($_SERVER as $parm => $value)  echo "$parm = '$value'\n";
 
 
@@ -30,6 +31,4 @@ echo $root;
 
 ?>
 
- <img src="imagem\perfil.jpg">
-
- 
+<img src="imagem\perfil.jpg">
