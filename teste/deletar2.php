@@ -16,7 +16,7 @@ $file = $root .  $filename;
 
 echo $root;
 
-
+//texto escrito
 
 //$filename = '\flor.jpg';
 //$fileDir  = realpath(__DIR__.'../../HTML/imagem/');
